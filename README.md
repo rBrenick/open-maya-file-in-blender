@@ -6,9 +6,9 @@ This was mostly written out of curiosity.
 
 Over the years I've said many times, <i>"If there exists a file format, someone has written an importer for blender"</i>. 
 
-As I've spent many years in Maya, I figured I'd take a stab at it.
+Figured it was time for me to take a stab at it.
 
-So I found [this repo](https://github.com/mottosso/maya-scenefile-parser), and I spent a weekend modifying it and writing an implementation for geometry/uv data for Blender.
+So I found [this repo](https://github.com/mottosso/maya-scenefile-parser), and spent a weekend modifying it and writing an implementation for geometry/uv data for Blender.
 
 It does not deal with construction history or anything like that, so you better hope history has been cleaned in the scene.
 
