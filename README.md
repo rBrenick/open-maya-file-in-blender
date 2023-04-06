@@ -1,6 +1,6 @@
 # Open Maya File In Blender
 
-This was mostly written as a thought experiment.
+This was mostly written out of curiosity.
 
 <code>"What if you could directly parse an .ma file to import it into Blender"</code>
 
@@ -9,6 +9,8 @@ Over the years I've said many time, <i>"If there exists a file format, someone h
 As I've spent many years in Maya, I figured I'd take a stab at it.
 
 So I found [this repo](https://github.com/mottosso/maya-scenefile-parser), and I spent a weekend modifying it and writing an implementation for geometry/uv data for Blender.
+
+It does not deal with construction history or anything like that, so you better hope history has been cleaned in the scene.
 
 <h1>NOTE</h1>
 Would not recommend using this for anything important. Opening the file in Maya and exporting an .fbx will result in 1000x more information being preserved.
@@ -20,5 +22,3 @@ Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-i
 <h2>Where to find it</h2>
 
 ![header image](docs/header_image.png)
-
-
