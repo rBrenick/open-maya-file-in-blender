@@ -26,7 +26,7 @@ from bpy_extras.io_utils import (
 
 @orientation_helper(axis_forward='-Z', axis_up='Y')
 class ImportMA(bpy.types.Operator, ImportHelper):
-    """Load a Autodesk Maya .ma File"""
+    """Load an Autodesk Maya .ma File"""
     bl_idname = "import_scene.maya_ascii"
     bl_label = "Import Maya ASCII Scene"
     bl_options = {'PRESET', 'UNDO'}
