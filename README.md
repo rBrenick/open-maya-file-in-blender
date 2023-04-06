@@ -1,4 +1,4 @@
-# Open Maya file In Blender
+# Open Maya File In Blender
 
 This was mostly written as a thought experiment.
 
