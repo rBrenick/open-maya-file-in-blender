@@ -22,3 +22,5 @@ Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-i
 <h2>Where to find it</h2>
 
 ![header image](docs/header_image.png)
+
+Good Luck 🤞
