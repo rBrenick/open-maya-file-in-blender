@@ -1,4 +1,4 @@
-<h2>Explanation</h2>
+# Open Maya File In Blender
 
 This was mostly written out of curiosity.
 
