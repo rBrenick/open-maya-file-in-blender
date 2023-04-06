@@ -4,7 +4,7 @@ This was mostly written out of curiosity.
 
 <code>"What if you could directly parse an .ma file to import it into Blender"</code>
 
-Over the years I've said many times, <i>"If there exists a file format, someone has written an importer for blender"</i>. 
+Over the years I've said many times: <i>"If there exists a file format, someone has written an importer for blender"</i>. 
 
 Figured it was time for me to take a stab at it.
 
