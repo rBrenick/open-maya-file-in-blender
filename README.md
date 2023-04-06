@@ -1,5 +1,3 @@
-# Open Maya File In Blender
-
 <h2>NOTE BEFORE USING</h2>
 Would not recommend using this for anything important. Opening the file in Maya and exporting an .fbx will result in 1000x more information being preserved.
 
