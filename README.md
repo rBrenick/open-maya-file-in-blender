@@ -1,5 +1,8 @@
 # Open Maya File In Blender
 
+<h2>NOTE BEFORE USING</h2>
+Would not recommend using this for anything important. Opening the file in Maya and exporting an .fbx will result in 1000x more information being preserved.
+
 <h2>How to install</h2>
 
 Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-in-blender/releases/download/0.00.01/open_maya_file_in_blender_0-00-01.zip), and install it as an Addon in Blender preferences. 
@@ -7,6 +10,8 @@ Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-i
 <h2>Where to find it</h2>
 
 ![header image](docs/header_image.png)
+
+
 
 <h2>Explaination</h2>
 
@@ -22,7 +27,6 @@ So I found [this repo](https://github.com/mottosso/maya-scenefile-parser), and s
 
 It does not deal with construction history or anything like that, so you better hope history has been cleaned in the scene.
 
-<h1>NOTE</h1>
-Would not recommend using this for anything important. Opening the file in Maya and exporting an .fbx will result in 1000x more information being preserved.
+
 
 Good luck 🤞
