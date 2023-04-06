@@ -1,5 +1,15 @@
 # Open Maya File In Blender
 
+<h2>How to install</h2>
+
+Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-in-blender/releases/download/0.00.01/open_maya_file_in_blender_0-00-01.zip), and install it as an Addon in Blender preferences. 
+
+<h2>Where to find it</h2>
+
+![header image](docs/header_image.png)
+
+<h2>Explaination</h2>
+
 This was mostly written out of curiosity.
 
 <code>"What if you could directly parse an .ma file to import it into Blender"</code>
@@ -15,12 +25,4 @@ It does not deal with construction history or anything like that, so you better 
 <h1>NOTE</h1>
 Would not recommend using this for anything important. Opening the file in Maya and exporting an .fbx will result in 1000x more information being preserved.
 
-<h2>How to install</h2>
-
-Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-in-blender/releases/download/0.00.01/open_maya_file_in_blender_0-00-01.zip), and install it as an Addon in Blender preferences. 
-
-<h2>Where to find it</h2>
-
-![header image](docs/header_image.png)
-
-Good Luck 🤞
+Good luck 🤞
