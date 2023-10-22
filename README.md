@@ -15,6 +15,13 @@ It does not deal with construction history or anything like that, so you better 
 <h2>NOTE BEFORE USING</h2>
 Would not recommend using this for anything important. Opening the file in Maya and exporting an .fbx will result in 1000x more information being preserved.
 
+
+<h3>Barely supports:</h3>
+
+- Transforms
+- Geometry
+- UVs
+
 <h2>How to install</h2>
 
 Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-in-blender/releases/download/0.00.01/open_maya_file_in_blender_0-00-01.zip), and install it as an Addon in Blender preferences. 
