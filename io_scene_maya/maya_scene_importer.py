@@ -95,15 +95,15 @@ class Parser(maya_parser_ascii.MayaAsciiParser):
         if not self.on_supported_node:
             return
         
-        if name == ".t":
+        if name == ".t" and type == "double3":
             self.current_node.location = value
             return
         
-        if name == ".r":
+        if name == ".r" and type == "double3":
             self.current_node.rotation = value
             return
         
-        if name == ".s":
+        if name == ".s" and type == "double3":
             self.current_node.scale = value
             return
             
