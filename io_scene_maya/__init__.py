@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Import Maya Scene (.ma)",
     "author": "Richard Brenick",
-    "version": (1, 0),
+    "version": (1, 1),
     "blender": (3, 3, 0),
     "location": "File - Import",
     "description": "Import some of the content from a maya scene file",
@@ -55,9 +55,6 @@ class ImportMA(bpy.types.Operator, ImportHelper):
         
         keywords["correction_matrix"] = global_matrix
 
-        if bpy.data.is_saved and context.user_preferences.filepaths.use_relative_paths:
-            keywords["relpath"] = os.path.dirname((bpy.data.path_resolve("filepath", False).as_bytes()))
-        
         folder = os.path.dirname(self.filepath)
         
         failed_files = []

@@ -12,6 +12,9 @@ So I found [this repo](https://github.com/mottosso/maya-scenefile-parser), and s
 
 It does not deal with construction history or anything like that, so you better hope history has been cleaned in the scene.
 
+<h2>Tested on</h2>
+Blender 3.1 / 4.1 / 5.0
+
 <h2>NOTE BEFORE USING</h2>
 Would not recommend using this for anything important. Opening the file in Maya and exporting an .fbx will result in 1000x more information being preserved.
 
