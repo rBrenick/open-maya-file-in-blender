@@ -1,5 +1,5 @@
 import os
-import sys
+import traceback
 from math import radians
 import mathutils
 import bpy
@@ -39,7 +39,10 @@ def import_scene(operator, context, filepath,
         parser.build_scene()
         
     if operator:
-        operator.report({'INFO'}, f"Imported: {os.path.basename(filepath)}")
+        if parser.unsuccesful_nodes:
+            operator.report({'WARNING'}, f"Imported: {os.path.basename(filepath)}\nNOTE: Failed to import '{len(parser.unsuccesful_nodes)}' node(s).\nSee Window - System Console for more info.")
+        else:
+            operator.report({'INFO'}, f"Imported: {os.path.basename(filepath)}")
     
     return {'FINISHED'}
 
@@ -56,6 +59,8 @@ class Parser(maya_parser_ascii.MayaAsciiParser):
         self.scene_nodes = []
         
         self.correction_matrix = None
+
+        self.unsuccesful_nodes = []
     
     def on_create_node(self, nodetype, name, parent):
         
@@ -236,7 +241,7 @@ class Parser(maya_parser_ascii.MayaAsciiParser):
             self.current_node.face_data.extend(all_face_data)
             
             return
-            
+
     def build_scene(self):
         for node in self.scene_nodes[:]:
         
@@ -245,7 +250,12 @@ class Parser(maya_parser_ascii.MayaAsciiParser):
                     # skip building parent transform when child can contain all the data, like camera or mesh
                     continue
             
-            node.build()
+            try:
+                node.build()
+            except Exception as e:
+                self.unsuccesful_nodes.append(node)
+                traceback.print_exc()
+                print(f"Failed to recreate node '{node.name}'. See error above.")
 
 
 class MayaNode(object):
