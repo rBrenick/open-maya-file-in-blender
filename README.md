@@ -27,7 +27,7 @@ Would not recommend using this for anything important. Opening the file in Maya 
 
 <h2>How to install</h2>
 
-Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-in-blender/releases/download/0.00.01/open_maya_file_in_blender_0-00-01.zip), and install it as an Addon in Blender preferences. 
+Grab [a zip file from the releases](https://github.com/rBrenick/open-maya-file-in-blender/releases/download/0.00.02/open_maya_file_in_blender_0-00-02.zip), and install it as an Addon in Blender preferences. 
 
 <h2>Where to find it</h2>
 
